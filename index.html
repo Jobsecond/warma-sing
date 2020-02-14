@@ -1,7 +1,7 @@
 ﻿<html>
 <head>
     <meta charset="utf-8" />
-    <title>Piano</title>
+    <title>灭火器弹唱网</title>
     <link rel="stylesheet" type="text/css" href="style/main.css" />
     <link rel="stylesheet" type="text/css" href="style/pace.css" />
     <link rel="icon" type="image/x-icon" href="style/favicon.ico" />
@@ -16,20 +16,23 @@
     <script async type="text/javascript" src="js/DOM/window_fnc.js"></script>
     <script async type="text/javascript" src="js/DOM/index.js"></script>
     <script async type="text/javascript" src="js/DOM/window_dom.js"></script>
-    <script async type="text/javascript" src="js/lastsession.js"></script>
+    <!-- <script async type="text/javascript" src="js/lastsession.js"></script> -->
 </head>
 <body>
     <div id="piano">
         <div id="btns">
-            <div id="styled" class="text" onclick="piano.styler()">Styles</div>
+            <span>Human Extinguisher</span>
+            <!-- <div id="styled" class="text" onclick="piano.styler()">Styles</div>
             <div id="assistd" class="text" onclick="piano.assist()">Key assist Off</div>
             <div id="recordd" class="text" onclick="win_fnc.viewer('recorder')">Recorder</div>
-            <div id="sheetd" class="text" onclick="win_fnc.viewer('sheet')">Sheets</div>
+            <div id="sheetd" class="text" onclick="win_fnc.viewer('sheet')">Sheets</div> -->
+            <img id="warma-logo" src="style/img/warma.png">
+            <input type="range" id="degree" min="0" max="99" value="40">
         </div>
         <div id="white"></div>
         <div id="black"></div>
         <div id="audio" onerror="location.reload()"></div>
     </div>
-    <div id='win'></div>
+    <!-- <div id='win'></div> -->
 </body>
 </html>

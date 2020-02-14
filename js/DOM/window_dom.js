@@ -1,7 +1,7 @@
 ﻿function win_dom() {
     var e, s, y, w, u, h, r, c, t, l, p, i, a, v, n;
     loc.get("win") == null && loc.set("win", ["hidden", "recorder", , ]);
-    var o = $("win"),
+    var o = document.createElement('div'), // $("win"),
         n, f = document.createElement("div");
     for (f.id = "rec_bkg", f.setAttribute("onmousedown", "drag.startMoving(event,'win')"), f.setAttribute("onmouseup", "drag.stopMoving('win')"), n = document.createElement("span"), n.id = "rec_bkg_title", i = document.createTextNode("Recorder"), n.appendChild(i), f.appendChild(n), n = document.createElement("span"), n.id = "rec_bkg_-", n.setAttribute("onclick", "win_fnc.viewer('" + loc.get("win").split(",")[1] + "',1)"), i = document.createTextNode("−"), n.appendChild(i), f.appendChild(n), n = document.createElement("span"), n.id = "rec_bkg_x", n.setAttribute("onclick", "win_fnc.close('" + loc.get("win").split(",")[1] + "','" + win_fnc.coos[0] + "','" + win_fnc.coos[1] + "')"), i = document.createTextNode("✖"), n.appendChild(i), f.appendChild(n), o.appendChild(f), e = document.createElement("span"), e.id = "sheet_tb1", s = document.createElement("select"), s.id = "sheet_choose", s.setAttribute("onmousedown", "if (piano.nmb!=1 && !piano.play_pause) piano.recplay()"), s.setAttribute("onchange", "trans.choose()"), y = 0; y < mus_sheet.length; y++) w = document.createElement("option"), i = document.createTextNode(mus_sheet[y][0]), w.appendChild(i), s.appendChild(w);
     e.appendChild(s);

@@ -9,16 +9,24 @@ body {
     -ms-user-select: none;
     -webkit-user-select: none;
     user-select: none;
-    margin: 35px 0 0 0;
-    background: url(../style/img/bk/5.jpg);
+    /* margin: 35px 0 0 0; */
+    background: url(../style/img/bk.jpg);
     cursor: default;
 }
 
 #piano {
     z-index: 3;
     margin: 0 auto;
-    width: 1236px;
+    width: 724px;
     height: 220px;
+
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
 }
 
 #s1,
@@ -72,14 +80,32 @@ input[type="button"] {
     z-index: 4;
     margin: 0 auto;
     margin-top: 3px;
-    margin-left: 393px;
-    padding-left: 40px;
-    width: 450px;
+    margin-left: 47px;
+    padding-left: 30px;
+    width: 630px;
     height: 40px;
     border: 1px solid #303030;
     background-color: #404040;
+}
+
+#btns span {
     font-size: 30px;
-    font-family: Vdj;
+    font-family: 'STZhongsong', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-left: 40px;
+}
+
+#degree {
+    width: 80px;
+}
+
+#warma-logo {
+    height: 40px;
+    margin-left: 100px;
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 .text {
@@ -104,7 +130,7 @@ input[type="button"] {
 #white {
     z-index: 1;
     padding-left: 10px;
-    width: 1236px;
+    width: 724px;
     height: 220px;
     background-image: linear-gradient(#454545 -10px,#000 200px);
 }
@@ -113,7 +139,7 @@ input[type="button"] {
     position: relative;
     top: -210px;
     padding-left: 9px;
-    width: 1236px;
+    width: 724px;
 }
 
 .w,
@@ -123,7 +149,7 @@ input[type="button"] {
 }
 
 .w {
-    margin: 4% auto;
+    margin: 50px auto;
     margin-left: 2px;
     width: 32px;
     height: 160px;

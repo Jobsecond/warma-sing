@@ -1,6 +1,11 @@
 document.onkeydown = function (n) {
-    var t = window.event ? n.keyCode : n.which;
-    n.shiftKey ? notes.b_c.indexOf(t) != -1 && piano.music("b" + t, 3) : notes.w_c.indexOf(t) != -1 && piano.music("a" + t, 1)
+    var t = n.key;
+    if (notes.b_n.indexOf(t) != -1) {
+        piano.music2("b" + notes.b_n.indexOf(t), 3);
+    }
+    if (notes.w_n.indexOf(t) != -1) {
+        piano.music2("a" + notes.w_n.indexOf(t), 1);
+    }
 };
 document.onmouseup = function () {
     piano.isMouseDown = !1
